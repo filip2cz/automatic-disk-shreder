@@ -1,12 +1,12 @@
 # Set drive path, for example /dev/sda
 # BE CAREFUL: DRIVE ON THIS PATH WILL BE DELETED, USE COMMAND fdisk -l TO CHECK, WHICH ONE YOU WANT TO ERACE
-config_drive="/dev/sda"
+config_drive="none"
 
 # Set this to your ntfy.sh url
-config_ntfy="ntfy.sh/fkomarek-shreder"
+config_ntfy="ntfy.sh/YOUR-UNIQUE-URL"
 
 # If this is set to true, script will keep erasing drive until you disconnect it
-config_repeat=true
+config_repeat=false
 
 # Some debug notifications for developers
 config_debug=false
