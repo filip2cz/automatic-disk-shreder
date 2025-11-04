@@ -22,7 +22,7 @@ fi
 while ! [ "$config_drive" = "none" ]
 do
     if test -b $config_drive; then
-        curl -d "Drive to erase found, waiting 10 seconds before shreading" $config_ntfy
+        curl -d "Drive to erase found, waiting 10 seconds before erasing" $config_ntfy
 
         sleep 10
 
