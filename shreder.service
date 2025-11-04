@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
+ExecStartPre=sleep 30
 ExecStart=bash /opt/automatic-disk-shreder/shreder.bash
 User=root
 
