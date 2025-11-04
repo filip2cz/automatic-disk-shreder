@@ -30,8 +30,8 @@ do
             curl -d "Drive disconnected before erasing, canceling operation" $config_ntfy
         else
             curl -d "Drive is still connected, erasing..." $config_ntfy
-            
-            if shred -v $config_drive; then
+
+            if shred -n 2 -z -v $config_drive; then
                 curl -d "Erasing successfull" $config_ntfy
 
                 if ! config_repeat; then
