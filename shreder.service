@@ -1,0 +1,11 @@
+[Unit]
+Description=FKomarek's automatic disk shreder service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=bash /opt/automatic-disk-shreder/shreder.bash
+User=root
+
+[Install]
+WantedBy=multi-user.target
